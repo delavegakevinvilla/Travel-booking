@@ -1,0 +1,99 @@
+body {
+ background-image: url("miko.jpg");
+ background-color: #cccccc;
+ background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+font-family: "Open Sans", "PT Sans", Calibri, Tahoma, sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+    
+}
+button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #33FFEC;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+form {
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+    text-align: center;
+}
+.overlay-right {
+	right: 0;
+}
+
+
+.social-container {
+	margin: 10px 0;
+}
+
+.social-container a {
+	border: 1px solid #fff;
+	border-radius: 60%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px;
+	height: 40px;
+	width: 40px;
+    background-color:blue;
+    color:white;
+}
+p {
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 200px;
+    border-radius:20px;
+    outline:none;
+}
+.overlay{
+    text-align:center;
+    color:purple;
+    font-size: 23px;
+    
+}
+h1 {
+    text-align: center;
+    color:purple;
+    font-size:auto;
+    font-family: "Open Sans", "PT Sans", Calibri, Tahoma, sans-serif;
+}

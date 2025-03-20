@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script.js"></script>
+	<title>The Archon's Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"
+    
+</head>
+<body>
+    <div class="overlay-panel overlay-right">
+					<h1>The Archon's Archives</h1>
+					<p>Welcome to The Archon's Archives, Please Login now! </p>
+				</div>
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+			<form onsubmit="login()">
+				<h1>Login</h1>
+				<div class="social-container">
+					<a href="https://www.facebook.com/" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="https://twitter.com/login" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+				</div>
+				<span>or use your account</span>
+				<input type="username" id="username" placeholder="username" required/>
+                <br>
+				<input type="password" id="password" placeholder="Password"required />
+                <br>
+				<a href="signup.html">Forgot your password?</a>
+				<button>Log In</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

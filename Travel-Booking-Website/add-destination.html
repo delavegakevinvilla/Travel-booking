@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Destination - Zambales Travelers</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Booking Section Starts Here -->
+    <section class="home">
+        <div class="home-box">
+            <nav>
+                <div class="logo bars">
+                    <div class="bar">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <h3>Zambales Travelers</h3>
+                </div>
+                <div class="menu">
+                    <div class="close">
+                        <i class="fa fa-close"></i>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="signup-login">
+                    <a href="#">Sign Up</a>
+                    <a href="#">Login</a>
+                </div>
+            </nav>
+
+            <div class="content">
+                <h5>Add a New Destination</h5>
+                <h1>Share Your Favorite Spots</h1>
+                <p>Help others discover amazing places by adding your favorite hotels, beaches, or tourist spots below.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Booking Section Ends Here -->
+
+    <!-- Add Destination Details Section Starts Here -->
+    <section class="add-destination-details">
+        <div class="container">
+            <h2 class="heading">Submit a New Destination</h2>
+           
+           <div class="add-destination-form">
+    <form id="add-destination-form">
+        <div class="form-group">
+            <label for="destination-name">Destination Name:<span class="required">*</span></label>
+            <input type="text" id="destination-name" name="destination-name" placeholder="Enter the name of the destination" required>
+        </div>
+
+        <div class="form-group">
+            <label for="destination-type">Type:<span class="required">*</span></label>
+            <select id="destination-type" name="destination-type" required>
+                <option value="">Select Type</option>
+                <option value="Hotel">Hotel</option>
+                <option value="Beach">Beach</option>
+                <option value="Tourist Spot">Tourist Spot</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="destination-description">Description:<span class="required">*</span></label>
+            <textarea id="destination-description" name="destination-description" rows="4" placeholder="Provide a brief description" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="destination-image">Upload Image:<span class="required">*</span></label>
+            <input type="file" id="destination-image" name="destination-image" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+            <label for="destination-location">Location:<span class="required">*</span></label>
+            <input type="text" id="destination-location" name="destination-location" placeholder="Enter the location (e.g., city, region)" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Submit Destination</button>
+        </div>
+    </form>
+</div>
+
+
+        </div>
+    </section>
+    <!-- Add Destination Details Section Ends Here -->
+
+    <!-- Footer Section Starts Here -->
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="detail">
+                    <h3>Zambales Travelers</h3>
+                    <p>This is the version of our website addressed to speakers of English in the Philippines. If you are a resident of another country or region, please select the appropriate version of Zambales Traveler for your country or region in the drop-down menu.</p>
+                    <h5>Get in Touch</h5>
+                    <a href="mailto:rikukiyoshi@gmail.com">rikukiyoshi@gmail.com</a>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                        <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    </div>
+                </div>
+                
+                <!-- About Us Section -->
+                <div id="about-us" class="about-us">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacts Section -->
+                <div id="contacts" class="about-us">
+                    <h4>Contacts</h4>
+                    <ul>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Email Us</a></li>
+                        <li><a href="#">Call Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Help Section -->
+                <div class="about-us">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Booking Guide</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <!--
+                <div class="about-us">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Gallery</li>
+                        <li><a href="#">Offers</a></li>
+                    </ul>
+                </div>
+                -->
+            </div>
+
+            <div class="copyright">
+                <div>
+                    &copy;2024 - Zambales Travelers, Inc. All rights reserved.
+                </div>
+                <div>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer Section Ends Here -->
+
+    <!-- GSAP and Script Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+    <!-- Script to Handle Form Submission (Optional) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const addDestinationForm = document.getElementById('add-destination-form');
+
+            addDestinationForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Get form values
+                const name = document.getElementById('destination-name').value.trim();
+                const type = document.getElementById('destination-type').value;
+                const description = document.getElementById('destination-description').value.trim();
+                const image = document.getElementById('destination-image').value.trim();
+                const location = document.getElementById('destination-location').value.trim();
+
+                // Simple validation
+                if(!name || !type || !description || !image || !location) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+
+                // For demonstration, we'll log the data. 
+                // In a real application, you would send this data to a server.
+                console.log('New Destination Submitted:', {
+                    name,
+                    type,
+                    description,
+                    image,
+                    location
+                });
+
+                // Reset the form
+                addDestinationForm.reset();
+
+                // Show a success message (you can create a modal or inline message)
+                alert('Thank you! Your destination has been submitted.');
+
+                // Optionally, redirect to discover.html
+                window.location.href = 'discover.html';
+            });
+        });
+    </script>
+</body>
+</html>

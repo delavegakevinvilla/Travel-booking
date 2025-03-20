@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Zambales Travelers</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Booking Section Starts Here -->
+    <section class="home">
+        <div class="home-box">
+            <!-- Navigation Bar -->
+            <nav>
+                <div class="logo bars">
+                    <div class="bar">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <h3>Zambales Travelers</h3>
+                </div>
+                <div class="menu">
+                    <div class="close">
+                        <i class="fa fa-close"></i>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="signup-login">
+                    <a href="#">Sign Up</a>
+                    <a href="#">Login</a>
+                </div>
+            </nav>
+
+            <!-- Booking Content -->
+            <div class="content">
+                <h5>Book Your Trip</h5>
+                <h1>Secure Your Adventure Today</h1>
+                <p>Fill out the booking form below to reserve your spot in one of our exclusive destinations.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Booking Section Ends Here -->
+
+    <!-- Booking Details Section Starts Here -->
+    <section class="booking-details">
+        <div class="container">
+            <h2 class="heading">Booking Details</h2>
+            <form id="booking-form" class="booking-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name:<span class="required">*</span></label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:<span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destination:<span class="required">*</span></label>
+                    <input type="text" id="destination" name="destination" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price per Pax:<span class="required">*</span></label>
+                    <input type="number" id="price" name="price" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkin">Check-In Date:<span class="required">*</span></label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkout">Check-Out Date:<span class="required">*</span></label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests:<span class="required">*</span></label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="special-requests">Special Requests:</label>
+                    <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any special requests?"></textarea>
+                </div>
+
+                <!-- Payment Method Section -->
+                <div class="form-group">
+                    <label for="payment-method">Payment Method:<span class="required">*</span></label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="">Select Payment Method</option>
+                        <option value="gcash">GCash</option>
+                        <option value="bank">Bank Account</option>
+                        <option value="paymaya">PayMaya</option>
+                    </select>
+                </div>
+
+                <!-- GCash, Bank, Paymaya Account Input (Hidden) -->
+                <div class="form-group" id="gcash-group" style="display:none;">
+                    <label for="gcash-number">GCash Number:<span class="required">*</span></label>
+                    <input type="text" id="gcash-number" name="gcash-number" pattern="09\d{9}">
+                </div>
+
+                <div class="form-group" id="bank-group" style="display:none;">
+                    <label for="bank-account">Bank Account Number:<span class="required">*</span></label>
+                    <input type="text" id="bank-account" name="bank-account">
+                </div>
+
+                <div class="form-group" id="paymaya-group" style="display:none;">
+                    <label for="paymaya-number">PayMaya Number:<span class="required">*</span></label>
+                    <input type="text" id="paymaya-number" name="paymaya-number" pattern="09\d{9}">
+                </div>
+
+                <button type="submit" class="submit-btn" disabled>Confirm Booking</button>
+            </form>
+
+            <div id="total-payment" class="total-payment hidden">
+                <h3>Total Payment:</h3>
+                <p id="payment-amount"></p>
+            </div>
+
+            <div id="confirmation" class="confirmation hidden">
+                <h3>Booking Confirmed!</h3>
+                <p>Thank you for booking with us, <span id="user-name"></span>! We have sent a confirmation email to <span id="user-email"></span>.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Booking Details Section Ends Here -->
+
+    <!-- Footer Section Starts Here -->
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="detail">
+                    <h3>Zambales Travelers</h3>
+                    <p>This is the version of our website addressed to speakers of English in the Philippines. If you are a resident of another country, please select the appropriate version of Zambales Traveler for your region.</p>
+                    <h5>Get in Touch</h5>
+                    <a href="mailto:rikukiyoshi@gmail.com">rikukiyoshi@gmail.com</a>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                        <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    </div>
+                </div>
+                <div class="about-us">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Privacy and Cookies Statement</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="about-us">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Booking Guide</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div>
+                    &copy;2024 - Zambales Travelers, Inc. All rights reserved.
+                </div>
+                <div>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer Section Ends Here -->
+    
+    <script>
+        // Function to get URL parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Get URL parameters
+        const destination = getQueryParam('destination');
+        const price = getQueryParam('price');
+
+        // Set the destination and price in the form
+        document.getElementById('destination').value = destination;
+        document.getElementById('price').value = price;
+
+        // Calculate total payment based on price and number of guests
+        function calculateTotalPayment() {
+            const price = parseFloat(document.getElementById('price').value) || 0;
+            const guests = parseInt(document.getElementById('guests').value) || 0;
+            const total = price * guests;
+            document.getElementById('payment-amount').innerText = total ? `₱${total.toFixed(2)}` : '';
+            return total;
+        }
+
+        // Form validation logic
+        function validateForm() {
+            const destination = document.getElementById('destination').value;
+            const guests = parseInt(document.getElementById('guests').value);
+            const isValid = destination && guests > 0;
+            document.querySelector('.submit-btn').disabled = !isValid; // Disable submit if invalid
+            calculateTotalPayment(); // Recalculate total on validation
+        }
+
+        // Event listener for guest input change (triggers validation and total payment calculation)
+        document.getElementById('guests').addEventListener('input', validateForm);
+
+        // Toggle payment method fields (GCash, Bank, Paymaya)
+        document.getElementById('payment-method').addEventListener('change', function() {
+            const paymentMethod = this.value;
+            document.getElementById('gcash-group').style.display = paymentMethod === 'gcash' ? 'block' : 'none';
+            document.getElementById('bank-group').style.display = paymentMethod === 'bank' ? 'block' : 'none';
+            document.getElementById('paymaya-group').style.display = paymentMethod === 'paymaya' ? 'block' : 'none';
+        });
+
+        // Form submission handler
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+            const total = calculateTotalPayment();
+            const userName = document.getElementById('full-name').value;
+            const userEmail = document.getElementById('email').value;
+
+            if (total > 0) {
+                // Display confirmation modal or section
+                document.getElementById('confirmation').classList.remove('hidden');
+                document.getElementById('user-name').innerText = userName;
+                document.getElementById('user-email').innerText = userEmail;
+                document.getElementById('total-payment').innerText = `Total Payment: ₱${total.toFixed(2)}`;
+                document.getElementById('total-payment').classList.remove('hidden');
+            }
+        });
+
+        // Initialize form validation on page load
+        document.addEventListener('DOMContentLoaded', validateForm);
+    </script>
+</body>
+</html>
